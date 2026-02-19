@@ -1,0 +1,966 @@
+/* montserrat font weight leggenda: 
+regular = 400
+medium = 500*/
+
+/* Stilizzazione */
+@font-face {
+  font-family: vampire_wars_regular; /* set name */
+  src: url(../webfonts/vampire_wars.woff); /* url of the font */
+}
+
+@font-face {
+  font-family: vampire_wars_italic; /* set name */
+  src: url(../webfonts/vampire_wars_italic.woff); /* url of the font */
+}
+
+::selection {
+    background-color: #000;
+    /* color: #fff; */
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+}
+
+p{
+    margin: 0;
+    color: #fff;
+}
+ul{
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    font-family: vampire_wars_regular;
+}
+
+section{
+    background-color: #352154;
+    width: 1798px;
+    margin: 0 auto;
+}
+/* Stilizzazione */
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    /* height: 181px; */
+    /* background-color: #ff0000; */
+    background-image: url(../img/main_cover_long.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-bottom: #000 2px solid;
+}
+
+header .content_box {
+    width: 1798px;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .content_box .logo_link img{
+    width: 425px;
+}
+
+header .content_box .logo_link img:hover{
+    content: url("../img/logo_animation.webp");
+}
+
+header .content_box .box_link, header .box_socials{
+    display: flex;
+    gap: 78px;
+}
+
+header .content_box .box_link li a{
+    font-size: 24px;
+    position: relative;
+}
+
+header .content_box .box_link li a:after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    transition: all 0.4s ease;
+}
+
+header .content_box .box_link li a:hover:after{
+    width: 100%;
+    left: 0;
+}
+
+header .content_box .box_socials {
+    gap: 4px;
+}
+
+header .content_box .box_socials i{
+    font-size: 24px;
+    transition: all 0.4s ease;
+}
+
+header .content_box .box_socials i:hover{
+    scale: 1.3;
+}
+
+/* section 1 */
+
+.main_box{
+    width: 1798px;
+    height: 736px;
+    background-color: #352154;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 109px;
+    margin-bottom: 30px;
+    border-radius: 0 0 15px 15px;
+    overflow: hidden;
+}
+
+.main_box .cta{
+    width: 511px;
+    height: 460px;
+    /* background-color: #33cc33; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "vampire_wars_regular";
+    font-size: 33px;
+    padding: 0 55px;
+    box-sizing: border-box;
+    color: #fff;
+    line-height: 1.35;
+}
+
+.button{
+    background-color: #fcee0a;
+    color: #000;
+    border: 6px solid #a69e10;
+    border-radius: 21px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    width: 180px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+.button:hover{
+    scale: 1.15;
+}
+
+.main_box .img_container{
+    width: 1394px;
+    height: 734px;
+    /* background-color: #3333cc; */
+    display: flex;
+    row-gap: 2px;
+    column-gap: 2px;
+    flex-wrap: wrap;
+}
+.main_box .img_container .photo_1{
+    background-image: url(../img/home_photo_5.png);
+}
+
+.main_box .img_container .img_box{
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* footer */
+
+footer{
+    width: 100%;
+    height: 132px;
+    background-color: #171717;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a{
+    font-family: "Barlow", sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+footer p{
+    font-family: "Barlow", sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+footer p + p{
+    font-size: 12px;
+    text-align: justify;
+}
+
+footer a:hover{
+    text-decoration: none;
+}
+
+footer > div{
+    width: calc(1798px / 3);
+    height: 80px;
+    /* background-color: #2f2f00; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+footer > div + div ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer > div + div ul li{
+    display: flex;
+    gap: 10px;
+}
+
+footer > div + div + div{
+    padding: 0 110px;
+}
+
+/* dettagli */
+.main_card{
+    width: 1798px;
+    height: 505px;
+    margin: 109px auto 0 auto;
+    background-color: #352154;
+    display: flex;
+    transition: all 0.4s ease;
+}
+
+.main_card:hover div:nth-child(1){
+    width: 0%;
+    padding: 0;
+    transition: all 0.4s ease;
+}
+
+.main_card p{
+    color: #fff;
+    transition: all 0.4s ease;
+}
+
+.main_card:hover div p{
+    color: #352154;
+    transition: all 0.1s ease;
+}
+
+.main_card:hover div:nth-child(2){
+    width: 100%;
+    transition: all 0.4s ease;
+}
+
+.main_card div{
+    width: 50%;
+    height: 505px;
+    /* background-color: #ff0000; */
+    font-family: "vampire_wars_regular";
+    font-size: 64px;
+    line-height: 1.35;
+    text-align: center;
+    color: #fff;
+    transition: all 0.4s ease;
+}
+
+.main_card div:nth-child(1){
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+.main_card div:nth-child(2){
+    background-image: url(../img/img_description_main.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video_card_car{
+    width: 1798px;
+    /* height: 843px; */
+    background-color: #352154;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.video_card_car div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.video_card_car div:nth-child(2) p:nth-child(1){
+    font-family: "vampire_wars_regular";
+    font-size: 64px;
+}
+
+.video_card_car div:nth-child(2) p:nth-child(2){
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.double{
+    display: flex;
+    /* height: 808px; */
+    margin-bottom: 10px;
+}
+
+.cta_gallery{
+    width: 50%;
+    /* height: 503px; */
+    /* background-color: #352154; */
+    margin: 0 auto;
+    font-family: "vampire_wars_regular";
+    font-size: 64px;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    gap: 85px;
+}
+
+.cta_gallery > div{
+    width: 100%;
+    height: 351px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta_gallery > div > div{
+    width: calc(25% - 10px);
+    height: 351px;
+    background-color: #5c264d;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    transition: all 0.15s ease;
+}
+
+.cta_gallery > div > div a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.cta_gallery > div > div:hover{
+    scale: 1.13;
+}
+
+.cta_gallery > div > div:nth-child(1){
+    background-image: url("../img/home_photo_1.png");
+    border-radius: 10px 0 0 10px;
+}
+
+.cta_gallery > div > div:nth-child(2){
+    background-image: url("../img/home_photo_2.png");
+    /* border-radius: 10px 0 0 10px; */
+}
+
+.cta_gallery > div > div:nth-child(3){
+    background-image: url("../img/home_photo_3.png");
+    /* border-radius: 10px 0 0 10px; */
+}
+
+.cta_gallery > div > div:nth-child(4){
+    background-image: url("../img/home_photo_4.jpg");
+    border-radius: 0 10px 10px 0;
+}
+
+.cta_gallery > p + p{
+    font-size: 28px;
+    font-weight: 400;
+    font-family: "montserrat";
+}
+
+.piattaforme{
+    width: 50%;
+    /* height: 506px; */
+    /* margin: 10px auto 10px auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    color: #fff;
+    font-size: 64px;
+    font-family: "vampire_wars_regular";
+    box-sizing: border-box;
+    padding: 40px;
+    gap: 85px;
+}
+
+.piattaforme p:nth-child(2){
+    font-size: 28px;
+    font-family: "montserrat";
+    font-weight: 500;
+}
+
+.piattaforme div{
+    width: 100%;
+    height: 179px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    /* padding: 0 80px; */
+    box-sizing: border-box;
+}
+
+.piattaforme > div img{
+    width: 100px;
+}
+
+.banner_contest{
+    height: 586px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner_contest > div{
+    width: calc(50% - 40px);
+    height: 506px;
+    /* background-color: #fcee0a; */
+}
+
+.banner_contest div:nth-child(1){
+    background-image: url(../img/dlc_main.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.banner_contest div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.banner_contest div:nth-child(2) p:nth-child(1){
+    font-family: "vampire_wars_regular";
+    font-size: 48px;
+    text-align: center;
+}
+
+.banner_contest div:nth-child(2) p:nth-child(2){
+    font-family: "montserrat";
+    font-size: 35px;
+    font-weight: 500;
+    padding: 0 70px;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+.requisiti{
+    height: 809px;
+    margin: 10px auto;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.requisiti .box{
+    width: 1494px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: #11332a; */
+}
+
+.requisiti .box > p{
+    font-family: "vampire_wars_regular";
+    font-size: 64px;
+    text-align: center;
+    padding: 0px 40px;
+    box-sizing: border-box;
+}
+
+.requisiti .box .description{
+    width: 100%;
+    /* background-color: #ccc; */
+    display: flex;
+    font-family: "montserrat";
+    font-weight: 500;
+    font-size: 28px;
+    border-bottom: #fff solid 2px;
+}
+
+.requisiti .box .description div{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.requisiti .box .description + div{
+    /* background-color: #71332a; */
+    height: 500px;
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.requisiti .box .description + div > div{
+    width: 50%;
+    /* background-color: #c63d28; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "montserrat";
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.requisiti .box .description + div > div > ul{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #237d5f; */
+}
+
+.requisiti .box .description + div > div > ul > li{
+    width: 50%;
+}
+
+.requisiti .box .description + div > div > ul li:nth-of-type(even){
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.cta_faq{
+    height: 242px;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 30px;
+    display: flex;
+    box-sizing: border-box;
+    padding: 40px;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    font-family: "vampire_wars_regular";
+    font-size: 64px;
+}
+
+/* FAQ */
+
+.faq_section{
+    height: 2595px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 40px;
+    margin-top: 110px;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 30px;
+}
+
+.faq_section .titolo{
+    font-size: 64px;
+    font-family: "vampire_wars_regular";
+}
+
+.faq_section .descrizione{
+    font-weight: 800;
+    font-family: "montserrat";
+    font-size: 40px;
+}
+
+.faq_section > div{
+    width: 100%;
+    /* background-color: cadetblue; */
+    border: #fff solid;
+    border-width: 2px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+    padding: 15px 10px;
+}
+
+.faq_section > div p:nth-child(1){
+    font-family: "montserrat";
+    font-weight: 500;
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+.faq_section > div p:nth-child(2){
+    font-family: "montserrat";
+    font-weight: 400;
+    font-size: 28px;
+}
+
+/* gallery */
+
+.gallery{
+    height: 1758px;
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 0 0 10px 10px;
+    font-family: "vampire_wars_regular";
+    font-size: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 110px;
+    margin-bottom: 30px;
+}
+
+.gallery > div{
+    width: 1686px;
+    /* height: 1562px; */
+    /* background-color: rgb(20, 52, 42); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 10px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border: #fff solid;
+    border-width: 3px 0;
+}
+
+.gallery > div > div{
+    width: 100%;
+    height: 373px;
+    /* background-color: #fcee0a; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery > div > div div{
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.gallery > div > div div:hover{
+    scale: 1.025;
+}
+
+.gallery > div div:nth-child(1) div:nth-child(1){
+    width: calc(70% - 5px);
+    height: 100%;
+    background-color: #5c264d;
+    background-image: url(../img/Cyber_Img_1.png);
+    
+}
+
+.gallery > div div:nth-child(1) div:nth-child(2){
+    width: calc(30% - 5px);
+    height: 100%;
+    background-color: #ad6a9a;
+    background-image: url(../img/Cyber_Img_2.png);
+}
+
+.gallery > div div:nth-child(2) div:nth-child(1){
+    width: calc(25% - 6.6666px);
+    height: 100%;
+    background-color: #5c264d;
+    background-image: url(../img/Cyber_Img_4.png);
+}
+
+.gallery > div div:nth-child(2) div:nth-child(2){
+    width: calc(50% - 6.6666px);
+    height: 100%;
+    background-color: #ad6a9a;
+    background-image: url(../img/Cyber_Img_3.png);
+}
+
+.gallery > div div:nth-child(2) div:nth-child(3){
+    width: calc(25% - 6.6666px);
+    height: 100%;
+    background-color: #ad6a9a;
+    background-image: url(../img/home_photo_2.png);
+}
+
+.gallery > div div:nth-child(3) div:nth-child(1){
+    width: calc(20% - 6.6666px);
+    height: 100%;
+    background-color: #5c264d;
+    background-image: url(../img/Cyber_Img_7.png);
+}
+
+.gallery > div div:nth-child(3) div:nth-child(2){
+    width: calc(45% - 6.6666px);
+    height: 100%;
+    background-color: #ad6a9a;
+    background-image: url(../img/Cyber_Img_8.png);
+}
+
+.gallery > div div:nth-child(3) div:nth-child(3){
+    width: calc(35% - 6.6666px);
+    height: 100%;
+    background-color: #ad6a9a;
+    background-image: url(../img/Cyber_Img_5.png);
+}
+
+.gallery > div div:nth-child(4) div:nth-child(1){
+    width: calc(40% - 6.6666px);
+    height: 100%;
+    background-color: #5c264d;
+    background-image: url(../img/Cyber_Img_9.png);
+}
+
+.gallery > div div:nth-child(4) div:nth-child(2){
+    width: calc(20% - 6.6666px);
+    height: 100%;
+    background-color: #ad6a9a;
+    background-image: url(../img/Cyber_Img_11.png);
+}
+
+.gallery > div div:nth-child(4) div:nth-child(3){
+    width: calc(40% - 6.6666px);
+    height: 100%;
+    background-color: #ad6a9a;
+    background-image: url(../img/Cyber_Img_10.png);
+}
+
+/* contest */
+
+.contest_section{
+    height: 369px;
+    margin-top: 110px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contest_section div:nth-child(1){
+    width: 63%;
+    height: 369px;
+    background-color: #a69e10;
+    background-image: url("../img/dlc_main.png");
+    background-position: center 9%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contest_section div:nth-child(2){
+    width: calc(100% - 63%);
+    height: 369px;
+    /* background-color: #f69e10; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contest_section div:nth-child(2) p:nth-child(1){
+    font-size: 64px;
+    font-family: "vampire_wars_regular";
+    padding-top: 20px;
+}
+
+.contest_section div:nth-child(2) p:nth-child(2){
+    font-size: 28px;
+    font-family: "montserrat";
+    padding-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contest_rules{
+    /* height: 896px; */
+    margin-bottom: 10px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    font-family: "vampire_wars_regular";
+    font-size: 64px;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.contest_rules > ul{
+    /* background-color: #5c264d; */
+    width: 100%;
+    /* height: 300px; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contest_rules > ul > li{
+    width: 100%;
+    /* height: 100%; */
+    /* background-color: #fd6a9a; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contest_rules > ul > li > div{
+    width: calc(1798px - 120px);
+    height: 102px;
+    /* background-color: #ad6a9a; */
+    border-bottom: #fff 2px solid;
+    display: flex;
+    justify-content: space-between;
+    font-family: "montserrat";
+    font-weight: bold;
+    font-size: 28px;
+    padding-bottom: 20px;
+}
+
+.contest_rules > ul > li > div > div:nth-child(2){
+    width: 70%;
+    /* background-color: rgb(138, 95, 34); */
+    font-weight: 400;
+}
+
+.form{
+    /* height: 1036px; */
+    box-sizing: border-box;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 0 0 10px 10px;
+    font-family: "vampire_wars_regular";
+    font-size: 64px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form > div{
+    height: 870px;
+    width: 69%;
+    /* background-color: #ad6a9a; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form > div > ul:nth-child(1){
+    /* background-color: #472222; */
+    width: 100%;
+    /* height: 200px; */
+    font-family: "montserrat";
+    font-size: 28px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form > div > ul:nth-child(1) li{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    border: #000 5px solid;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+
+.form > div > ul:nth-child(1) p{
+    color: #000;
+}
+
+.form > div > ul:nth-child(1) li:nth-child(1){
+    background-color: #fcee0a;
+}
+.form > div > ul:nth-child(1) li:nth-child(2){
+    background-color: #cdc109;
+}
+.form > div > ul:nth-child(1) li:nth-child(3){
+    background-color: #aaa008;
+}
+
+.form > div > .piattaforme_form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.form > div > div{
+    font-size: 36px;
+    font-family: "montserrat";
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.form > div .piattaforme_form li{
+    width: 100%;
+    display: flex;
+    font-size: 28px;
+    font-family: "montserrat";
+    font-weight: 500;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.form > div .button_box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
